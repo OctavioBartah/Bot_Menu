@@ -2856,7 +2856,7 @@ const getRegisteredRandomId = () => {
     				if (!isUser) return reply(mess.only.userB)
 					if (args.length < 1) return reply('Urlnya mana gan?')
 					if (!isUrl(args[0]) && !args[0].includes('youtu.be')) return reply(mess.error.Iv)
-					anu = await fetchJson(`http://itsmeikygans.my.id/ytmp4?apikey=${ItsApi}&url=${args[0]}`, {method: 'get'})
+					anu = await fetchJson(`https://st4rz.herokuapp.com/api/ytv2?url=${args[0]}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					ytt = `「 *YOUTUBE MP4 DOWNLOADER* 」\n\n• Title : *${anu.title}*\n• *Size:* ${anu.filesize}\n• *Deskripsi:* ${anu.desc}\n\n Tunggu Sebentar 1 menit Mungkin Agak Lama Karna Mendownload Video`
 					buff = await getBuffer(anu.thumb)
@@ -2869,18 +2869,16 @@ const getRegisteredRandomId = () => {
 
 				case 'ytmp3':
 					if (isBanned) return reply(mess.only.benned)    
-					if (!isUser) return reply(mess.only.userB)
-					if (args.length < 1) return reply('Cadê o url mano?')
-					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
-					anu = await fetchJson(`http://itsmeikygans.my.id/ytmp3?apikey=${ItsApi}&url=${args[0]}&apiKey=${BarBarApi}`, {method: 'get'})
-					if (anu.error) return reply(anu.error)
-					teks = `「 *YOUTUBE MP3 DOWNLOADER* 」\n\n• Title : *${anu.title}*\n• *Size:* ${anu.filesize}\n*• Deskripsi:* ${anu.desc}\n\n Tunggu Sebentar 1 menit Mungkin Agak Lama Karna Mendownload Video`
-					buff = await getBuffer(anu.thumb)
-					reply(mess.wait)
-					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buff, image, {quoted: mek, caption: teks})
-					client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
-					await limitAdd(sender) 
+					 if (!isUser) return reply(mess.only.userB)
+                reply(mess.wait)
+                play = body.slice(5)
+                anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
+               if (anu.error) return reply(anu.error)
+                 infomp3 = `*Musica encontrada!!*\nJudul : ${anu.result.title}\nFonte : ${anu.result.source}\nTamanho : ${anu.result.size}\n\n*ESPERE ENVIANDO POR FAVOR, NÃƒO SPAM YA PAI*`
+                buffer = await getBuffer(anu.result.thumbnail)
+                lagu = await getBuffer(anu.result.url_audio)
+                client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
+                client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
 					break 
 
            case 'playmp3':
