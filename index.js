@@ -2824,7 +2824,6 @@ const getRegisteredRandomId = () => {
          case 'joox':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPrem) return reply(mess.only.premium)
                 anu = await fetchJson(`https://tobz-api.herokuapp.com/api/joox?q=${body.slice(6)}&apikey=${TobzApi}`, {method: 'get'})
                if (anu.error) return reply(anu.error)
                  infomp3 = `「 *JOOX* 」\n\n*• Titulo* : ${anu.result.judul}\n*• Album* : ${anu.result.album}\n*• Publicados* : ${anu.result.dipublikasi}\n\n*ESPERE ENVIANDO POR FAVOR, NAO SPAM*`
@@ -2839,7 +2838,6 @@ const getRegisteredRandomId = () => {
           case 'snack':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPrem) return reply(mess.only.premium)
 				if (args.length < 1) return reply('Cadê o url mano?')
 					if (!isUrl(args[0]) && !args[0].includes('sck')) return reply(mess.error.Iv)
                 anu = await fetchJson(`https://api-anoncybfakeplayer.herokuapp.com/sckdown?url=${args[0]}`, {method: 'get'})
@@ -2855,7 +2853,6 @@ const getRegisteredRandomId = () => {
                 
              case 'ytmp4':
     				if (isBanned) return reply(mess.only.benned)    
-    				if (!isPrem) return reply(mess.only.premium)
     				if (!isUser) return reply(mess.only.userB)
 					if (args.length < 1) return reply('Urlnya mana gan?')
 					if (!isUrl(args[0]) && !args[0].includes('youtu.be')) return reply(mess.error.Iv)
@@ -2872,7 +2869,6 @@ const getRegisteredRandomId = () => {
 
 				case 'ytmp3':
 					if (isBanned) return reply(mess.only.benned)    
-					if (!isPrem) return reply(mess.only.premium)
 					if (!isUser) return reply(mess.only.userB)
 					if (args.length < 1) return reply('Cadê o url mano?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
@@ -2889,7 +2885,6 @@ const getRegisteredRandomId = () => {
 
            case 'playmp3':
                 if (isBanned) return reply(mess.only.benned)    
-				if (!isPrem) return reply(mess.only.premium)
 				if (!isUser) return reply(mess.only.userB)
                 reply(mess.wait)
                 play = body.slice(9)
@@ -2942,7 +2937,6 @@ const getRegisteredRandomId = () => {
                    break 
 	       case 'smule':
 	       if (isBanned) return reply(mess.only.benned)
-	       if (!isPrem) return reply(mess.only.premium)
 				if (!isUser) return reply(mess.only.userB)
 					if (args.length < 1) return reply('Urlnya mana gan?')
 					if (!isUrl(args[0]) && !args[0].includes('c-ash.smule')) return reply(mess.error.Iv)
