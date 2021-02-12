@@ -2388,8 +2388,8 @@ const getRegisteredRandomId = () => {
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (args.length < 1) return reply('Yang mau di add siapa??')
-					if (args[0].startsWith('08')) return reply('Gunakan kode negara Gan')
+					if (args.length < 1) return reply('Q?')
+					if (args[0].startsWith('08')) return reply('Use o código do pais')
 					try {
 						num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
 						client.groupAdd(from, [num])
@@ -2414,7 +2414,7 @@ const getRegisteredRandomId = () => {
 						mentions(teks, mentioned, true)
 						client.groupRemove(from, mentioned)
 					} else {
-						mentions(`Pedidos recebidos, emitidos, removendo o ze buceta : @${mentioned[0].split('@')[0]}`, mentioned, true)
+						mentions(`Pedidos recebidos, emitidos, removendo : @${mentioned[0].split('@')[0]}`, mentioned, true)
 						client.groupRemove(from, mentioned)
 					}
 					break
@@ -2424,7 +2424,7 @@ const getRegisteredRandomId = () => {
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Não pode ser removido')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
 						teks = 'Pedidos aceitos, no edo tensei :\n'
@@ -3217,8 +3217,9 @@ const getRegisteredRandomId = () => {
             break
 				default:
 					if (body.startsWith(`${prefix}${command}`)) {
-                  reply(`Desculpa Mano *${pushname2}*, Comando *${prefix}${command}* Nao Listado Dentro *${prefix}menu*`)
+                  reply(`Me desculpa *${pushname2}*, mas esse comando *${prefix}${command}* Não Existe `)
                   }
+					//Nao Listado Dentro *${prefix}menu*
 					if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
 						muehe = await simih(budy)
