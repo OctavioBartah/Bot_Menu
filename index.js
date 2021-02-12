@@ -1449,13 +1449,13 @@ const getRegisteredRandomId = () => {
 					await limitAdd(sender) 
 					break 
 
-				case 'kaneki':
+				case 'sukuna':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 					if (!isAnime) return reply(' *Harus Mengaktifkan Mode Anime* ')
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=kaneki`, {method: 'get'})
+					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=Sukuna`, {method: 'get'})
 					kan = JSON.parse(JSON.stringify(anu));
 					eki =  kan[Math.floor(Math.random() * kan.length)];
 					nye = await getBuffer(eki)
