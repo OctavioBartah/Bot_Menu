@@ -1859,21 +1859,7 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, gree, image, {caption: 'Nih kak', quoted: mek})
 					await limitAdd(sender) 
 					break 
-					
-			 case 'herrypotter':
-                         case 'harrypotter':
-				 var gh = body.slice(12)
-					if (isBanned) return reply(mess.only.benned)    
-				if (!isUser) return reply(mess.only.userB)
-				if (isLimit(sender)) return reply(limitend(pushname2))
-
-                                        if (args.length < 1) return reply(`onde estÃ¡ o texto hum\nExemplo: ${prefix}harrypotter Loli_Senpai BOT`)
-				  anu = await fetchJson(`https://tobz-api.herokuapp.com/api/photooxy?theme=harry_potter&text=${gh}&apikey=BotWeA`, {method: 'get'})
-                                  buffer = await getBuffer(anu.result)
-                                  client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Toma...'})
-					await limitAdd(sender) 
-					break 
-					
+			
 				case 'c3d':
 					
 					if (isBanned) return reply(mess.only.benned)    
