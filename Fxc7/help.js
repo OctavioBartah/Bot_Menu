@@ -43,7 +43,7 @@ const help = (prefix, yt, name, pushname2, user, limitt, uptime, jam, tanggal) =
 ❉
 ❉
 ❉
-❉  ╭─「 ❉ *MÍDIA DOWNLOAD* ❉ 」──────
+❉  ╭─「 ❉ *MIDIA DOWNLOAD* ❉ 」──────
 ❉  |
 ❉  |➻ ${prefix}meme
 ❉  |➻ ${prefix}memeindo
@@ -52,7 +52,7 @@ const help = (prefix, yt, name, pushname2, user, limitt, uptime, jam, tanggal) =
 ❉  |➻ ${prefix}ytmp3
 ❉  ╰───────────────────────
 ❉
-❉  ╭─「 ❉ *CRIADOR MÍDIA* ❉ 」──────  
+❉  ╭─「 ❉ *CRIADOR MIDIA* ❉ 」──────  
 ❉  ┴
 ❉  │➻ *${prefix}harrypotter CAFE*
 ❉  │➻ *${prefix}stiker*
