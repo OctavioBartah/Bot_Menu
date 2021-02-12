@@ -2550,8 +2550,8 @@ const getRegisteredRandomId = () => {
 			    case 'nsfw':
 			    if (isBanned) return reply(mess.only.benned)    
 			    if (!isUser) return reply(mess.only.userB)
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
+					//if (!isGroup) return reply(mess.only.group)
+					//if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
 					if ((args[0]) === 'on') {
 						if (isNsfw) return reply('O modo NSFW está ativo ')
@@ -2561,7 +2561,7 @@ const getRegisteredRandomId = () => {
 					} else if ((args[0]) === 'off') {
 						nsfw.splice(from, 1)
 						fs.writeFileSync('./database/json/nsfw.json', JSON.stringify(nsfw))
-						reply(`\`\`\`✓Sukes menonaktifkan mode nsfw di group\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Desativando o modo nsfw com sucesso\`\`\` *${groupMetadata.subject}*`)
 					} else {
 						reply('On ativar, Off desabilitar')
 					}
