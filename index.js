@@ -68,7 +68,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'END:VCARD'
 
 prefix = "_"
-name = "~ LOLI.SENPAI | B O T"
+name = "~ LOLI_SENPAI | B O T"
 rdaftar = "OBRIGADO POR SE REGISTRAR😁"
 rmenu = "Olá amigos da LOLIBOT👋"
 limitt = 50
