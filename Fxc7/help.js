@@ -1,5 +1,5 @@
 const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal) => { 
-	return `
+	return 
 	
 
 \`\`\`POR FAVOR, LEIA AS NOTAS ABAIXO ANTES\`\`\`
