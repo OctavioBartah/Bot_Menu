@@ -35,33 +35,22 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}blocklist*
 │➻ *${prefix}banlist*
 │➻ *${prefix}premiumlist*
-│➻ *${prefix}bahasa*
 ┬
 ╰────────────────────────
 
 
 ͏͏͏͏͏͏͏͏͏͏͏͏͏͏╭──────「 *MEDIA DOWNLOAD* 」
 ┴
-│➻ *${prefix}tiktokstalk username*
-│➻ *${prefix}insta Link*
-│➻ *${prefix}instastory username*
 │➻ *${prefix}meme*
 │➻ *${prefix}memeindo*
-│➻ *${prefix}kbbi*
 │➻ *${prefix}wait*
-│➻ *${prefix}trendtwit*
 ┬
 ╰────────────────────────
 
 
 ╭──────「 *CRIADOR MENU* 」
 ┴
-│➻ *${prefix}cneon CAFE*
-│➻ *${prefix}cneon2 CAFE*
-│➻ *${prefix}cneongreen CAFE*
-│➻ *${prefix}c3d CAFE*
-│➻ *${prefix}csky CAFE*
-│
+│➻ *${prefix}harrypotter CAFE*
 │➻ *${prefix}stiker*
 │➻ *${prefix}gifstiker*
 │➻ *${prefix}toimg*
@@ -135,25 +124,6 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}simih On/Off*
 ┬
 ╰────────────────────────
-
-╭────────────────────────
-┴
-│➻ *${prefix}cerpen*
-│➻ *${prefix}cersex*
-│➻ *${prefix}xxx japan*
-│➻ *${prefix}pornhub stepMoms* 
-┬
-╰────────────────────────
-
-╭────────────────────────
-┴
-│➻ *${prefix}jadwalsholat Banyuwangi*
-│➻ *${prefix}quran*
-│➻ *${prefix}quransurah 1*
-│➻ *${prefix}tafsir kafir*
-┬
-╰────────────────────────
-
 
 ╭─────────「 *SO PROPRIETARIO* 」
 ┴
