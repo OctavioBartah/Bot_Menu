@@ -1215,7 +1215,7 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, ssweb, image, {quoted: mek})
 					await limitAdd(sender)
 					break 
-				case 'nsfwloli':
+				case 'loli':
 				    try {
 				    if (isBanned) return reply(mess.only.benned)    
 				    if (!isUser) return reply(mess.only.userB)
@@ -1223,33 +1223,35 @@ const getRegisteredRandomId = () => {
 						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR* ')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=${TobzApi}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Fofa ^~^'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
 						reply(' *ERRO* ')
 					}
 					await limitAdd(sender)
 					break 
-			    case 'nsfwblowjob':
+			    case 'blowjob':
 				    try {
 				    if (isBanned) return reply(mess.only.benned)    
 				    if (!isUser) return reply(mess.only.userB)
 				    if (isLimit(sender)) return reply(limitend(pushname2))
+					    if (!isGroupAdmins) return reply(mess.only.admin)
 						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR* ')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwblowjob?apikey=${TobzApi}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Toma ai...'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
 						reply(' *ERROR* ')
 					}
 					await limitAdd(sender)
 					break 
-			    case 'nsfwneko':
+			    case 'neko':
 				    try {
 				    if (isBanned) return reply(mess.only.benned)    
 				    if (!isUser) return reply(mess.only.userB)
 				    if (isLimit(sender)) return reply(limitend(pushname2))
+					    if (!isGroupAdmins) return reply(mess.only.admin)
 						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR* ')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko?apikey=${TobzApi}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
@@ -1260,11 +1262,12 @@ const getRegisteredRandomId = () => {
 					}
 					await limitAdd(sender) 
 					break 
-				case 'nsfwtrap':
+				case 'trap':
 				    try {
 				    if (isBanned) return reply(mess.only.benned)    
 				    if (!isUser) return reply(mess.only.userB)
 				    if (isLimit(sender)) return reply(limitend(pushname2))
+					    if (!isGroupAdmins) return reply(mess.only.admin)
 						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR * ')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwtrap?apikey=${TobzApi}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
@@ -1280,6 +1283,7 @@ const getRegisteredRandomId = () => {
 				    if (isBanned) return reply(mess.only.benned)    
 				    if (!isUser) return reply(mess.only.userB)
 				    if (isLimit(sender)) return reply(limitend(pushname2))
+					    if (!isGroupAdmins) return reply(mess.only.admin)
 						if (!isNsfw) return reply(' *SO O DONO PODE ATIVAR* ')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai?apikey=${TobzApi}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
@@ -1295,7 +1299,7 @@ const getRegisteredRandomId = () => {
 				if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
 				reply(mess.wait)
-					if (args.length < 1) return reply('Cadê o texto, mano?')
+					if (args.length < 1) return reply('Cadê o texto?')
 					anu = await fetchJson(`https://api.i-tech.id/tools/hilih?key=${TechApi}&kata=${body.slice(7)}`, {method: 'get'})
 					client.sendMessage(from, `${anu.result}`, text, {quoted: mek})
 					await limitAdd(sender) 
