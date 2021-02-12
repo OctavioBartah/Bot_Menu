@@ -68,12 +68,12 @@ const vcard = 'BEGIN:VCARD\n'
             + 'END:VCARD'
 
 prefix = "_"
-name = "~ SCREAMO | B O T"
+name = "~ LOLI.SENPAI | B O T"
 rdaftar = "OBRIGADO POR SE REGISTRAR😁"
-rmenu = "Olá amigos do LORDEBOT👋"
+rmenu = "Olá amigos da LOLIBOT👋"
 limitt = 50
 ban = []
-userpremium = ["821074417113@s.whatsapp.net"] //ubah nomer kalian
+userpremium = ["5511963386276@s.whatsapp.net"] //ubah nomer kalian
 
 function kyun(seconds){
   function pad(s){
@@ -117,7 +117,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Ola @${num.split('@')[0]}\nBem vindo (a) ☕ *${mdata.subject}*`
+				teks = `Ola @${num.split('@')[0]}\nBem vindo (a) ao grupo ☕ *${mdata.subject}*\nLeia as regras e divirta-se ^~^`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -127,7 +127,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Tchau e nao volte @${num.split('@')[0]}👋`
+				teks = `Adeus @${num.split('@')[0]}\nAqui só fica os fortes 👋`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -158,7 +158,7 @@ const getRegisteredRandomId = () => {
 			const content = JSON.stringify(mek.message)
 			const from = mek.key.remoteJid
 			const type = Object.keys(mek.message)[0]
-			const FarhanGans = ["821074417113@s.whatsapp.net"] // apenas mude esta tudo bem
+			const FarhanGans = ["5511963386276@s.whatsapp.net"] // apenas mude esta tudo bem
 			const farhan = mek.message.conversation
 			const insom = from.endsWith('@g.us')
 			const nameReq = insom ? mek.participant : mek.key.remoteJid
@@ -179,10 +179,10 @@ const getRegisteredRandomId = () => {
 			
 
 			mess = {
-				wait: '*⏳ 𝗰𝗮𝗹𝗺𝗮 𝗮í 𝗺𝗮𝗻𝗼 𝘁𝗼𝗺𝗲 𝘂𝗺 𝗰𝗮𝗳é☕𝗲 𝘂𝗺 𝗯𝗶𝘀𝗰𝗼𝗶𝘁𝗼 🥯 𝗽𝗼𝗿 𝗲𝗻𝗾𝘂𝗮𝗻𝘁𝗼...*',
+				wait: '*⏳ 𝗰𝗮𝗹𝗺𝗮 𝗮í anjo. T𝗼𝗺𝗲 𝘂𝗺 𝗰𝗮𝗳é☕𝗲 coma 𝘂𝗺 𝗯𝗶𝘀𝗰𝗼𝗶𝘁𝗼 🥯 𝗽𝗼𝗿 𝗲𝗻𝗾𝘂𝗮𝗻𝘁𝗼^~^*',
 				success: '*ꜱᴜceꜱꜱo...*',
 				error: {
-					stick: ' *𝙢𝙖𝙣𝙤 𝙙𝙚𝙪 𝙧𝙪𝙞𝙢 𝙖𝙤 𝙘𝙤𝙣𝙫𝙚𝙧𝙩𝙚𝙧 𝙖 𝙞𝙢𝙖𝙜𝙚𝙢 𝙚𝙢 𝙨𝙩𝙞𝙘𝙠𝙚𝙧 *',
+					stick: ' *Me desculpe, não consegui 𝙘𝙤𝙣𝙫𝙚𝙧𝙩𝙚𝙧 𝙖 𝙞𝙢𝙖𝙜𝙚𝙢 𝙚𝙢 𝙨𝙩𝙞𝙘𝙠𝙚𝙧 ;-; *',
 					Iv: '*𝙚𝙨𝙨𝙚 𝙡𝙞𝙣𝙠 𝙣𝙖𝙤 𝙫𝙖𝙡𝙚 !!*'
 				},
 				only: {
@@ -225,7 +225,7 @@ const getRegisteredRandomId = () => {
             ]
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["821074417113@s.whatsapp.net"] // owner number ubah aja
+			const ownerNumber = ["5511963386276@s.whatsapp.net"] || ["557399881974@s.whatsapp.net"]// owner number ubah aja
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -274,7 +274,7 @@ const getRegisteredRandomId = () => {
                     for (let lmt of _limit) {
                         if (lmt.id === sender) {
                             limitCounts = limitt - lmt.limit
-                            if (limitCounts <= 0) return client.sendMessage(from,`Limit request anda sudah habis\n\n_Note : Limit akan direset setiap jam 21:00!_`, text,{ quoted: mek})
+                            if (limitCounts <= 0) return client.sendMessage(from,`Sua solicitação de limite expirou \n\n_Note : O limite será zerado as 21:00!_`, text,{ quoted: mek})
                             client.sendMessage(from, limitcount(limitCounts), text, { quoted : mek})
                             found = true
                         }
@@ -410,7 +410,7 @@ const getRegisteredRandomId = () => {
 						reply('O modo anti-link foi desativado com sucesso️')
     					}
 					} else {
-						reply('selecione on ou off mano?')
+						reply('selecione on ou off ^~^')
 					}
 					
 					break 
@@ -449,9 +449,9 @@ const getRegisteredRandomId = () => {
 					if (jeneng.length < 1) return reply('Qual é o nome??')
 					if (umure.length < 1) return reply('idade dele??')
 					if (jeneng.length >= 20) return reply(`buset panjang amat namanya`)
-					if (umure.length >= 3, umure.length <= 1) return reply(`minimal umur 10 tahun keatas dan maximal 30 tahun`)
+					if (umure.length >= 3, umure.length <= 1) return reply(`minimo de 10 caracteres e maximo de 30`)
 					if (asal.length < 1) return reply('originado de mars gan??')
-					if (asal.length >= 20) return reply('onde fica a área mano🤔')
+					if (asal.length >= 20) return reply('onde fica a área🤔')
 					user.push(sender)
 					fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
 					await costum(`\`\`\`Cadastro teve sucesso com SN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`Em ${date} ${time}\`\`\`\n\`\`\`[Nome]: ${jeneng}\`\`\`\n\`\`\`[Numero]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Era]: ${umure} Ano\`\`\`\n\`\`\`[Origem]: ${asal}\`\`\`\n\`\`\`Para usar um bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help/menu\`\`\`\n\`\`\`\nTotal Do Utilizador: ${user.length} Pessoa\`\`\``, text, lordeScreamo, rdaftar)
@@ -509,7 +509,7 @@ const getRegisteredRandomId = () => {
 					client.sendMessage(from, ben.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": ban}})
 					break 
 				case 'premiumlist':
-				prem = '```Lista Users Premium  SCREAMO B O T``` :\n'
+				prem = '```Lista Users Premium  Loli.Senpai B O T``` :\n'
 					for (let userprem of userpremium) {
 						prem += `~> @${userprem.split('@')[0]}\n`
 					}
@@ -531,7 +531,7 @@ const getRegisteredRandomId = () => {
 								fs.unlinkSync(media)
 							})
 					} else {
-						reply('Só uma foto mano')
+						reply('Só uma foto')
 					}
 					await limitAdd(sender) 
 					break 
@@ -1165,8 +1165,8 @@ const getRegisteredRandomId = () => {
                          text: teks1,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('628311800241@s.whatsapp.net', options, text, {quoted: mek})
-                    reply('O problema foi relatado ao proprietário do BOT, laporan palsu/main2 tidak akan ditanggapi.')
+                    client.sendMessage('5511963386276@s.whatsapp.net', options, text, {quoted: mek})
+                    reply('O problema foi relatado ao proprietário do BOT.')
                     break
                 case 'request':
                 if (isBanned) return reply(mess.only.benned)    
@@ -1180,8 +1180,8 @@ const getRegisteredRandomId = () => {
                          text: ress,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('821074417113@s.whatsapp.net', options, text, {quoted: mek})
-                    reply('SUA SOLICITAÇÃO chegou ao proprietário BOT, Requests palsu/main2 tidak akan ditanggapi.')
+                    client.sendMessage('5511963386276@s.whatsapp.net', options, text, {quoted: mek})
+                    reply('SUA SOLICITAÇÃO chegou ao proprietário BOT.')
                     break
 				case 'meme':
 				if (isBanned) return reply(mess.only.benned)    
@@ -1207,7 +1207,7 @@ const getRegisteredRandomId = () => {
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (isLimit(sender)) return reply(limitend(pushname2))
-					if (args.length < 1) return reply('Urlnya mana gan?')
+					if (args.length < 1) return reply('Url desse tamanho?')
 					teks = `${body.slice(7)}`
 					reply(mess.wait)
 					anu = await fetchJson(`https://mnazria.herokuapp.com/api/screenshotweb?url=${teks}`)
