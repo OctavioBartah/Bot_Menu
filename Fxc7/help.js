@@ -1,11 +1,27 @@
-const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal) => { 
-	return 
+const help = (prefix, yt, name, pushname2, user, limitt, uptime, jam, tanggal) => { 
+	return '
 	
 
 \`\`\`POR FAVOR, LEIA AS NOTAS ABAIXO ANTES\`\`\`
 \`\`\`USANDO O BOT\`\`\`
 
 ❉❉❉ LOLI_SENPAI ❉❉❉
+
+❉  ╭──────「 *REGULAMENTO ${name}* 」
+❉  ┴
+❉  ┣⊱  \`\`\`NOMA USUARIO:\`\`\` *${pushname2}*
+❉  ┣⊱  \`\`\`VERIFICACAO:\`\`\` ✅
+❉  ┣⊱  \`\`\`LIMITE:\`\`\` *${limitt}*
+❉  ┣⊱  \`\`\`ATIVO:\`\`\` ${kyun(uptime)}
+❉  ┣⊱  \`\`\`HORA:\`\`\` *${jam} WIB*
+❉  ┣⊱  \`\`\`ENCONTRO:\`\`\` *${tanggal}*
+❉  ┣⊱  \`\`\`VERSAO:\`\`\` *6.5.0*
+❉  ┣⊱  \`\`\`USUARIO REGISTRADO:\`\`\` *${user.length} User*
+❉  ┣⊱  ❌ *SPAM*
+❉  ┣⊱  ❌ *CALL & VC*
+❉  ┣⊱  \`\`\`Quebra??\`\`\` *Banido*
+❉  ┬
+❉  ╰────────────────────────
 ❉       
 ❉         ❉ Menu ❉
 ❉
