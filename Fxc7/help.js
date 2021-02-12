@@ -59,19 +59,15 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ❉  │➻ *${prefix}hinata*
 ❉  │➻ *${prefix}sakura*
 ❉  │➻ *${prefix}sasuke*
-❉  │➻ *${prefix}kaneki*
-❉  │➻ *${prefix}toukachan*
-❉  │➻ *${prefix}rize*
 ❉  │➻ *${prefix}akira*
 ❉  │➻ *${prefix}itori*
 ❉  │➻ *${prefix}kurumi*
-❉  │➻ *${prefix}miku*
+❉  │➻ *${prefix}sukuna*
 ❉  │➻ *${prefix}anime*
 ❉  │➻ *${prefix}animecry*
 ❉  │➻ *${prefix}neonime*
 ❉  │➻ *${prefix}animekiss*
 ❉  │➻ *${prefix}animewp*
-❉  │➻ *${prefix}wink*
 ❉  ┬
 ❉  ╰───────────────────────
 
