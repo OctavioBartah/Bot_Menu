@@ -23,9 +23,9 @@ const help = (prefix, yt, name, pushname2, user, limitt, uptime, jam, tanggal) =
 ❉  ┬
 ❉  ╰────────────────────────
 ❉       
-❉         ❉ Menu ❉
+❉        「 ❉ Menu ❉ 」
 ❉
-❉  ╭─❉ *SOBRE ${name}* ❉──────
+❉  ╭─「 ❉ *SOBRE ${name}* ❉ 」──────
 ❉  ┴
 ❉  │➻ *${prefix}report lapor bug* primeira git termux com antilink
 ❉  │➻ *${prefix}info*
@@ -43,7 +43,7 @@ const help = (prefix, yt, name, pushname2, user, limitt, uptime, jam, tanggal) =
 ❉
 ❉
 ❉
-❉  ╭─❉ *MÍDIA DOWNLOAD* ❉──────
+❉  ╭─「 ❉ *MÍDIA DOWNLOAD* ❉ 」──────
 ❉  |
 ❉  |➻ ${prefix}meme
 ❉  |➻ ${prefix}memeindo
@@ -52,7 +52,7 @@ const help = (prefix, yt, name, pushname2, user, limitt, uptime, jam, tanggal) =
 ❉  |➻ ${prefix}ytmp3
 ❉  ╰───────────────────────
 ❉
-❉  ╭─❉ *CRIADOR MÍDIA* ❉──────  
+❉  ╭─「 ❉ *CRIADOR MÍDIA* ❉ 」──────  
 ❉  ┴
 ❉  │➻ *${prefix}harrypotter CAFE*
 ❉  │➻ *${prefix}stiker*
@@ -66,7 +66,7 @@ const help = (prefix, yt, name, pushname2, user, limitt, uptime, jam, tanggal) =
 ❉  ╰──────────────────────────
 ❉
 ❉
-❉  ╭─❉ *GRUPO APENAS* ❉ 
+❉  ╭─「 ❉ *GRUPO APENAS* ❉ 」 
 ❉  ┴
 ❉  │➻ *${prefix}modeanime On/Off*
 ❉  │➻ *${prefix}naruto*
@@ -125,7 +125,7 @@ const help = (prefix, yt, name, pushname2, user, limitt, uptime, jam, tanggal) =
 ❉  ┬
 ❉  ╰────────────────────────
 ❉
-❉  ╭─❉ *SO PROPRIETARIO* ❉ 
+❉  ╭─「 ❉ *SO PROPRIETARIO* ❉ 」 
 ❉  ┴
 ❉  │➻ *${prefix}addprem mentioned*
 ❉  │➻ *${prefix}removeprem mention*
